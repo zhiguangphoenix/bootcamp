@@ -113,10 +113,10 @@
         <script type="text/javascript">
           var currentUser = "{{ request.user.username }}"
           $(function() {
-                  source: "{% url 'search:suggestions' %}",
+                  source: "{% url 'search:suggestions' %}"
                   minLength: 2
               });
-          });
+          // });
         </script>
       {% endblock javascript %}
 
