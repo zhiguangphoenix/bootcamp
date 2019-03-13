@@ -1,37 +1,35 @@
 .top-bar {
-  height: 48px;
-  background: #fff;
-  border-bottom: 1px solid rgba(0,0,0,0.25);
+  height: 62px;
+  background: #24292e;
+  padding: 0px 16px;
+  display: flex;
+  align-items: center;
   // ##24292e;
-  .top-bar-inner {
-    height: 100%;
-    max-width: 890px;
-    min-width: 590px;
-    margin: 0 auto;
+  .logo {
+    width: 45px;
+  }
+  .search {
+    .search-input {
+      height: 30px;
+      border: none;
+      border-radius: 3px;
+      width: 300px;
+      padding: 6px 8px;
+      outline: none;
+    }
+    .blur {
+      background: hsla(0,0%,100%,.125);
+      color: #fff;
+    }
+    .focus {
+      background-color: #fff;
+      color: black;
+    }
   }
   .tabs {
     height: 100%;
     display: flex;
     align-items: center;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    .tab-item {
-      width: 100px;
-      height: 48px;
-      font-size: 14px;
-      font-weight: bold;
-      color: #24292e;
-      text-align: center;
-      cursor: pointer;
-      &:hover {
-        border-bottom: 2px solid #24292e;
-      }
-      .text {
-        display: inline-block;
-        margin-top: 13px;
-      }
-    }
-    .active {
-      border-bottom: 2px solid #24292e;
-    }
   }
 }
